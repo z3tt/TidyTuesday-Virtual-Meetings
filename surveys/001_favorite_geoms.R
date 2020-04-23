@@ -1,3 +1,10 @@
+## First #Tidytuesday Virtual Meeting Survey (2020-04-23)
+
+## Question & Visualization by Cédric Scherer
+
+## What is your favorite geom? 
+## (Or: If you would be a geom, which would it be?)
+
 library(tidyverse)
 library(showtext)
 library(cowplot)

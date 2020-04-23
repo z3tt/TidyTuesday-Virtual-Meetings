@@ -1,3 +1,5 @@
+## #TidyTuesday Virtual Meeting Logo created by Cédric Scherer (March 2020)
+
 library(hexSticker)
 library(showtext)
 
