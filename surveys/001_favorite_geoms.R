@@ -45,5 +45,5 @@ p + draw_image(here::here("logo", "tt_vm_hex.png"),
   x = 13, y = 1.1, width = 3.2, height = 3.2
 )
 
-ggsave(here::here("surveys", "1_favorite_geoms.pdf"), 
+ggsave(here::here("surveys", "001_favorite_geoms.pdf"), 
        width = 8, height = 6, device = cairo_pdf)

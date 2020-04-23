@@ -20,11 +20,11 @@ And the intent of the virtual meetings is to connect and to get to know each oth
 Each meeting, we ask a question to the group and one of us is chosen to visualize the results. This way, we do not only get to know our community better but also collect visualizations showcasing the variety of designs in  our community.
 
 ### First Meeting: "What is your favorite geom?"
-![./surveys/1_favorite_geoms.png](https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/surveys/1_favorite_geoms.png)
+![./surveys/001_favorite_geoms.png](https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/surveys/001_favorite_geoms.png)
 
 ***
 
-## [Logo](https://github.com/Z3tt/TidyTuesday-Virtual-Meetings/tree/master/surveys/logo/)
+## [Logo](https://github.com/Z3tt/TidyTuesday-Virtual-Meetings/tree/master/logo/)
 
 The hex logo was made in R with the help of the [`hexSticker` package](https://github.com/GuangchuangYu/hexSticker).
 
