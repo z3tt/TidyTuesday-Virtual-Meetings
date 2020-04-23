@@ -22,6 +22,8 @@ Each meeting, we ask a question to the group and one of us is chosen to visualiz
 ### First Meeting: "What is your favorite geom?"
 ![./surveys/001_favorite_geoms.png](https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/surveys/001_favorite_geoms.png)
 
+Packages: `tibble` (data), `ggplot2` (plotting), `hrbrthemes` (theme), `nord` (colors), `cowplot` (image), `showtext` (font)
+
 ***
 
 ## [Logo](https://github.com/Z3tt/TidyTuesday-Virtual-Meetings/tree/master/logo/)
