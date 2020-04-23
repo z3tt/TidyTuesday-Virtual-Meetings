@@ -26,7 +26,7 @@ Each meeting, we ask a question to the group and one of us is chosen to visualiz
 
 ## [Logo](https://github.com/Z3tt/TidyTuesday-Virtual-Meetings/tree/master/logo/)
 
-The hex logo was made in R with the help of the [`hexSticker` package](https://github.com/GuangchuangYu/hexSticker).
+The hex logo was made in R with the help of the [`hexSticker` package](https://github.com/GuangchuangYu/hexSticker). The code can be found [here](https://github.com/Z3tt/TidyTuesday-Virtual-Meetings/blob/master/logo/hexlogo_virtual_meetings.R).
 
 ***
 
