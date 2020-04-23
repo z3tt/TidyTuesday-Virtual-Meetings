@@ -1,11 +1,11 @@
 <h1 style="font-weight:normal" align="center">
-  <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/logo/tt_vm_hex.png" width=50%;>
+  <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/logo/tt_vm_hex.png" width=20%;><br>
   &nbsp;#TidyTuesday Virtual Meetings&nbsp;
 </h1>
 
 <div align="center">
 
-:loudspeaker: Join the [R4DS Slack channel](r4ds.io/join)!
+### :loudspeaker: Join the [R4DS Slack channel](r4ds.io/join)!
 
 </div>
 
