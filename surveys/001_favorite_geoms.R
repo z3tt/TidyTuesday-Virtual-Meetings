@@ -49,7 +49,7 @@ p <-
          caption = "Visualisation by Cédric Scherer")
 
 p + draw_image(here::here("logo", "tt_vm_hex.png"),
-  x = 13, y = 1.1, width = 3.2, height = 3.2
+  x = 12.7, y = .8, width = 4, height = 4
 )
 
 ggsave(here::here("surveys", "001_favorite_geoms.pdf"), 
