@@ -1,5 +1,5 @@
 <h1 style="font-weight:normal" align="center">
-  ![./logo/tt_vm_hex.png](https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/logo/tt_vm_hex.png)
+  <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/logo/tt_vm_hex.png";>
   &nbsp;#TidyTuesday Virtual Meetings&nbsp;
 </h1>
 
