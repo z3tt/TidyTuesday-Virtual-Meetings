@@ -28,7 +28,7 @@ Packages: `tibble` (data), `ggplot2` (plotting), `hrbrthemes` (theme), `nord` (c
 
 ### Second Meeting: "What is your favorite data visualization package?"
 
-![./surveys/001_favorite_geoms.png](https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/surveys/002_favorite_packages.png)
+![./surveys/002_favorite_packages.png](https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/surveys/002_favorite_packages.png)
 
 Packages: `tibble` (data), `ggplot2` (plotting), `ggtext` (font) `fishualize` (colors), `cowplot` (image), `extrafont` (font)
 
