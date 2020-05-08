@@ -1,52 +1,58 @@
 ## Second #Tidytuesday Virtual Meeting Survey (2020-05-08)
 
 ## Question by Alex Cookson
-## Visualization implemented by Alex Cookson, based on original by Cédric Scherer
+## Visualization by Alex Cookson
 
 ## What is your favourite data viz package? (other tha ggplot2)
 ## Or, if you can't think of a favourite, what package did you most recently learn or want to learn?
 ## Meeting attendees filtered in throughout the hour, so we only got a few responses!
 
 library(tidyverse)
-library(showtext)
+library(extrafont)
 library(cowplot)
+library(fishualize)
+library(ggtext)
 
-font_add_google("Overpass Mono", "Overpass Mono")
 
 packages <- tribble(
   ~package, ~value,
-  "{treemapify}", 1,
-  "{ggrepel}", 1,
-  "{dplyr}", 2,
-  "{ggtext}", 2,
-  "{fishualize}", 1,
-  "{ggExtra}", 1,
-  "{ggeasy}", 1
+  "treemapify", 1,
+  "ggrepel", 1,
+  "dplyr", 2,
+  "ggtext", 2,
+  "fishualize", 1,
+  "ggExtra", 1,
+  "ggeasy", 1
 )
 
-p <-
-  ggplot(packages, aes(fct_reorder(package, value), value)) +
-    geom_col(fill = "#32324b", color = NA, width = .8) +
-    geom_text(aes(label = value), family = "Overpass Mono", color = "white", nudge_y = -.07) +
-    coord_flip(clip = "off") +
-    hrbrthemes::theme_modern_rc(grid = "X") +
-    scale_y_continuous(expand = c(.005, .005)) +
-    theme(axis.text.x = element_blank(),
-          axis.ticks.x = element_blank(),
-          axis.text.y = element_text(size = 13, face = "bold"),
-          legend.text = element_text(size = 13),
-          legend.position = "top",
-          plot.title = element_text(size = 20),
-          plot.subtitle = element_text(size = 16),
-          plot.caption = element_text(color = "grey60", margin = margin(t = 30, b = -10)),
-          plot.title.position = "plot")  +
-    labs(x = NULL, y = NULL,
-         title = '"What is your favorite data visualization package?"',
-         subtitle = "... asked at our second #TidyTuesday Virtual Meeting",
-         caption = "Visualisation implemented by Alex Cookson\n(Based on original by Cédric Scherer)")
+fishualize_palette <- "Pseudochromis_aldabraensis"
+
+p <- packages %>%
+  mutate(package = fct_reorder(package, value)) %>%
+  ggplot(aes(value, package, fill = package, colour = package)) +
+  geom_segment(aes(x = 0, xend = value, y = package, yend = package), size = 1.5, alpha = 0.5) +
+  geom_point(shape = 21, size = 12) +
+  scale_x_continuous(breaks = 0:2) +
+  scale_fill_fish(option = fishualize_palette,
+                  discrete = TRUE) +
+  scale_colour_fish(option = fishualize_palette,
+                    discrete = TRUE) +
+  labs(title = "Claus Wilke's <span style = 'font-size:24pt; color:#B24531FF'>**ggtext**</span> is popular among #TidyTuesday-ers!",
+       subtitle = "\nWe asked attendees of the 2nd Virtual #TidyTuesday meeting,\n\"What is your favourite visualization package?\"",
+       x = "Number of respondents",
+       y = NULL,
+       caption = "Graphic: @alexcookson") +
+  theme_minimal() +
+  theme(legend.position = "none",
+        text = element_text(family = "Bahnschrift"),
+        plot.title = element_textbox_simple(size = 18),
+        axis.text = element_text(size = 16),
+        axis.title = element_text(size = 12, face = "plain"),
+        panel.grid = element_blank())
 
 p + draw_image(here::here("logo", "tt_vm_hex.png"),
-               x = 12.7, y = .8, width = 4, height = 4)
+               x = 1.4, y = 1, width = 1, height = 1.8)
 
-ggsave(here::here("surveys", "002_favorite_package.pdf"), 
-       width = 8, height = 6, device = cairo_pdf)
+ggsave(here::here("surveys", "002_favorite_package.pdf"), width = 8, height = 6, device = cairo_pdf)
+
+ggsave(here::here("surveys", "002_favorite_package.png"), dpi = 320, width = 8, height = 6)
