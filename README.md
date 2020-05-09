@@ -19,12 +19,14 @@ And the intent of the virtual meetings is to connect and to get to know each oth
 
 Each meeting, we ask a question to the group and one of us is chosen to visualize the results. This way, we do not only get to know our community better but also collect visualizations showcasing the variety of designs in  our community.
 
+##
+
 ### First Meeting: "What is your favorite geom?"
 ![./surveys/001_favorite_geoms.png](https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/surveys/001_favorite_geoms.png)
 
 Packages: `tibble` (data), `ggplot2` (plotting), `hrbrthemes` (theme), `nord` (colors), `cowplot` (image), `showtext` (font)
 
-
+##
 
 ### Second Meeting: "What is your favorite data visualization package?"
 
