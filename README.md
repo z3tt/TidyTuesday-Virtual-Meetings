@@ -34,6 +34,14 @@ Packages: `tibble` (data), `ggplot2` (plotting), `hrbrthemes` (theme), `nord` (c
 
 Packages: `tibble` (data), `ggplot2` (plotting), `ggtext` (font) `fishualize` (colors), `cowplot` (image), `extrafont` (font)
 
+##
+
+### Third Meeting: "What is your favorite default ggplot2 theme?"
+
+![./surveys/003_favorite_theme.png](https://raw.githubusercontent.com/Z3tt/TidyTuesday-Virtual-Meetings/master/surveys/003_favorite_theme.png)
+
+Packages: `ggplot2` (plotting), `cowplot` (arrangement)
+
 ***
 
 ## [Logo](https://github.com/Z3tt/TidyTuesday-Virtual-Meetings/tree/master/logo/)
